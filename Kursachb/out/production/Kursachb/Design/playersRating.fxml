@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="771.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.RatingController">
+   <children>
+      <Button fx:id="connectBtn" layoutX="591.0" layoutY="584.0" mnemonicParsing="false" onAction="#ButtonConnect" prefHeight="52.0" prefWidth="161.0" text="Перейти в меню">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></Button>
+      <TableView fx:id="PlayersTable" layoutX="-3.0" layoutY="-1.0" prefHeight="564.0" prefWidth="766.0">
+        <columns>
+          <TableColumn fx:id="NameColumn" prefWidth="166.0" text="Имя" />
+            <TableColumn fx:id="ScoreColumn" minWidth="4.0" prefWidth="155.0" text="Счет" />
+            <TableColumn fx:id="DifColumn" minWidth="0.0" prefWidth="169.0" text="Сложность" />
+            <TableColumn fx:id="styleColumn" prefWidth="174.0" text="Жанр" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
